@@ -1,0 +1,36 @@
+1: mkdir labthreesk; cd labthreesk; git init
+
+2:touch README.md; notepad README.md; git add README.md
+
+3:git commit -m "Initial commit"
+
+4:git checkout -b feature1
+
+//i nästkommande commits skriver jag i vim editor istället för att sätta -m "commit message"
+
+5:notepad README.md; git add README.md; git commit
+
+6:git checkout main; notepad README.md; git add README.md; git commit
+
+7:git merge feature1; notepad README.md; git add README.md; git commit;
+
+8:git tag extinct
+
+9:git checkout main^; git branch -f main; git checkout main
+
+10:git branch feature2
+
+11:notepad README.md; git add README.md; git commit
+
+12:git checkout feature2; touch fix1.txt; git add fix1.txt; git commit;
+touch fix2.txt; git add fix2.txt, git commit
+
+13:git checkout main
+
+14:git cherry-pick 979cc4c
+
+15:notepad fix2.txt
+
+16:git remote add origin https://github.com/Phteffe/Labb1StefanKarlssonGIT.git;
+git push -u origin --all; git push origin --tags; notepad fix2.txt; git add fix2.txt; git commit
+
